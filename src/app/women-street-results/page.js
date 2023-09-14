@@ -1,7 +1,7 @@
 import { Payment, columns } from "./columns";
 import { DataTable } from "./data-table";
 import { google } from "googleapis";
-
+import { cookies } from "next/headers";
 async function getData() {
   // Fetch data from your API here.
 
@@ -91,6 +91,8 @@ async function getData() {
 export default async function DemoPage() {
   const data = await getData();
   console.log(data, "-------------------- women-street-results page load");
+  const cookieStore = cookies();
+  //   console.log(cookieStore.getAll())
 
   //   const response = await fetch("/api/men-park-results", {
   //     cache: "no-store"
