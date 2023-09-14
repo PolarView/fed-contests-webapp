@@ -12,7 +12,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex items-center justify-evenly flex-col w-[80%] h-[60%] my-10 gap-y-14">
+      <div className="flex items-center justify-evenly flex-col w-[80%] h-[60%] my-16 gap-y-14">
         <div className="flex-1 text-center flex w-full text-3xl md:text-5xl lg:text-5xl items-center justify-center ">
           <Link href="/men-park-results">Парни парк</Link>
         </div>
@@ -38,9 +38,12 @@ export default function Home() {
 
       <footer className="p-4 w-[80%] bg-white rounded-lg shadow md:px-6 md:py-8 my-10 dark:bg-gray-800">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <a href="#" target="_blank" className="flex items-center mb-4 sm:mb-0">
-            <img src="/favicon-32x32.png" className="mr-4 h-8" alt="Flowbite Logo" />
-            <span className="self-center text-base lg:text-xl font-semibold whitespace-nowrap dark:text-white">
+          <a
+            href="/"
+            target="_blank"
+            className="flex items-center flex-col md:flex-row mb-4 sm:mb-0">
+            <img src="/favicon-32x32.png" className="m-4 h-8" alt="Flowbite Logo" />
+            <span className="self-center text-sm lg:text-xl font-semibold whitespace-nowrap dark:text-white">
               Федерация Скейтбординга России
             </span>
           </a>
