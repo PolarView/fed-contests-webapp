@@ -13,11 +13,11 @@ export default function Home() {
       </div>
 
       <div className="w-[90%] rounded p-4 md:w-[60%] lg:w-[45%] md:text-xl lg:text-3xl text-center font-semibold my-12 border border-gray-700 border-dotted">
-        На этой странице вы можете отслеживать свои результаты, сначала в квалификации, затем в
-        финале в реальном времени.
+        На этом сайте вы можете отслеживать свои результаты, сначала в квалификации, затем в финале
+        в реальном времени.
       </div>
 
-      <div className="w-[90%] tracking-wide my-20 text-3xl md:text-4xl lg:text-6xl font-bold text-center">
+      <div className="w-[90%] tracking-wide my-16 text-3xl md:text-4xl lg:text-6xl font-bold text-center">
         Квалификация
       </div>
 
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-[90%] my-20  tracking-wide  text-3xl md:text-4xl lg:text-6xl font-bold text-center">
+      <div className="w-[90%] my-16  tracking-wide  text-3xl md:text-4xl lg:text-6xl font-bold text-center">
         Финал
       </div>
 
