@@ -17,7 +17,7 @@ export default function Home() {
         финале в реальном времени.
       </div>
 
-      <div className="w-[90%] tracking-wide mt-10  mb-12 text-3xl md:text-4xl lg:text-6xl font-bold text-center">
+      <div className="w-[90%] tracking-wide my-20 text-3xl md:text-4xl lg:text-6xl font-bold text-center">
         Квалификация
       </div>
 
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-[90%] mt-10  tracking-wide mb-12 text-3xl md:text-4xl lg:text-6xl font-bold text-center">
+      <div className="w-[90%] my-20  tracking-wide  text-3xl md:text-4xl lg:text-6xl font-bold text-center">
         Финал
       </div>
 
