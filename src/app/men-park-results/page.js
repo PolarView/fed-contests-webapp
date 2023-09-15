@@ -40,6 +40,7 @@ async function getData() {
   let isWomens = false;
   const data = await getRows.data.values
     .filter((item, index) => {
+      // note uppercase first letter
       if (item.includes("Девушки")) {
         isWomens = true;
       }
