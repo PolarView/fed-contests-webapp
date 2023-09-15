@@ -34,7 +34,7 @@ async function getData() {
   const getRows = await googleSheets.spreadsheets.values.get({
     auth,
     spreadsheetId,
-    range: "Street"
+    range: "Street_final"
   });
 
   let isWomens = false;

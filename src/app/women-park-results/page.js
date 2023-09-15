@@ -2,6 +2,7 @@ import { Payment, columns } from "./columns";
 import { DataTable } from "./data-table";
 import { google } from "googleapis";
 import { cookies } from "next/headers";
+import Layout from "@/layouts/Layout";
 async function getData() {
   // Fetch data from your API here.
 
@@ -98,8 +99,10 @@ export default async function DemoPage() {
   //   console.log(readyData);
 
   return (
-    <div className="container w-screen h-screen">
-      <DataTable columns={columns} data={data} />
-    </div>
+    <Layout>
+      <div className="container w-screen h-screen">
+        <DataTable columns={columns} data={data} />
+      </div>
+    </Layout>
   );
 }

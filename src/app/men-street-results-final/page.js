@@ -34,7 +34,7 @@ async function getData() {
   const getRows = await googleSheets.spreadsheets.values.get({
     auth,
     spreadsheetId,
-    range: "Street"
+    range: "Street_final"
   });
 
   let isWomens = false;
@@ -44,7 +44,7 @@ async function getData() {
         isWomens = true;
       }
 
-      if (isWomens && Number(item[0])) return true;
+      if (!isWomens && Number(item[0])) return true;
     })
     .map((item) => {
       return {
@@ -91,9 +91,8 @@ async function getData() {
 
 export default async function DemoPage() {
   const data = await getData();
-  console.log(data, "-------------------- women-street-results page load");
+  console.log(data, "-------------------- men-street-results page load");
   const cookieStore = cookies();
-  //   console.log(cookieStore.getAll())
 
   //   const response = await fetch("/api/men-park-results", {
   //     cache: "no-store"

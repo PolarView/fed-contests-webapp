@@ -1,8 +1,8 @@
 import { Payment, columns } from "./columns";
 import { DataTable } from "./data-table";
 import { google } from "googleapis";
-import { cookies } from "next/headers";
 import Layout from "@/layouts/Layout";
+import { cookies } from "next/headers";
 async function getData() {
   // Fetch data from your API here.
 
@@ -34,7 +34,7 @@ async function getData() {
   const getRows = await googleSheets.spreadsheets.values.get({
     auth,
     spreadsheetId,
-    range: "Street"
+    range: "Park_final"
   });
 
   let isWomens = false;
@@ -50,18 +50,17 @@ async function getData() {
       return {
         name: item[1],
         surname: item[2],
-        firstAvarageBestTrick: item[38],
-        secondAvarageBestTrick: item[39],
-        thirdAvarageBestTrick: item[40],
-        fourthAvarageBestTrick: item[41],
-        fifthAvarageBestTrick: item[42],
-        firstAvarageRun: item[43],
-        secondAvarageRun: item[44],
-        finalScore: item[45]
+        firstAvarageScore: item[28],
+        secondAvarageScore: item[29],
+        thirdAvarageScore: item[30],
+        fourthAvarageScore: item[31],
+        fifthAvarageScore: item[32],
+        finalScore: item[33]
       };
     });
 
   console.log(data);
+  const cookieStore = cookies();
 
   //   return [
   //     {
@@ -91,9 +90,7 @@ async function getData() {
 
 export default async function DemoPage() {
   const data = await getData();
-  console.log(data, "-------------------- women-street-results page load");
-  const cookieStore = cookies();
-  //   console.log(cookieStore.getAll())
+  console.log(data, "-------------------- women-park-results page load");
 
   //   const response = await fetch("/api/men-park-results", {
   //     cache: "no-store"
