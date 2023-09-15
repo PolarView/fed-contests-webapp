@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Button
-        className="text-xl lg:text-2xl m-12 rounded-lg border border-black border-solid"
+        className="text-xl lg:text-2xl mt-6 ml-6 rounded-lg border border-black border-solid"
         asChild
         variant="outline">
         <Link href="/">На главную</Link>
