@@ -51,13 +51,14 @@ async function getData() {
       return {
         name: item[1],
         surname: item[2],
+        firstAvarageRun: item[43],
+        secondAvarageRun: item[44],
         firstAvarageBestTrick: item[38],
         secondAvarageBestTrick: item[39],
         thirdAvarageBestTrick: item[40],
         fourthAvarageBestTrick: item[41],
         fifthAvarageBestTrick: item[42],
-        firstAvarageRun: item[43],
-        secondAvarageRun: item[44],
+
         finalScore: item[45]
       };
     });

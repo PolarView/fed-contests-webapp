@@ -17,6 +17,11 @@ export const columns = [
     header: "Фамилия"
   },
   {
+    accessorKey: "firstAvarageRun",
+    header: "заезд 1"
+  },
+  { accessorKey: "secondAvarageRun", header: "заезд 2" },
+  {
     accessorKey: "firstAvarageBestTrick",
     header: "лучший трюк 1"
   },
@@ -36,11 +41,7 @@ export const columns = [
     accessorKey: "fifthAvarageBestTrick",
     header: "лучший трюк 5"
   },
-  {
-    accessorKey: "firstAvarageRun",
-    header: "заезд 1"
-  },
-  { accessorKey: "secondAvarageRun", header: "заезд 2" },
+
   {
     accessorKey: "finalScore",
     header: ({ column }) => {
